@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل حساب - NetGold</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- رأس الموقع -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-crown"></i>
+                <h1>Net<span class="gold-text">Gold</span></h1>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#services">خدماتنا</a></li>
+                    <li><a href="index.html#packages">الباقات</a></li>
+                    <li><a href="index.html#about">من نحن</a></li>
+                    <li><a href="index.html#contact">اتصل بنا</a></li>
+                    <li><a href="register.html" class="btn active">تسجيل حساب</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- قسم التسجيل -->
+    <section class="register-section">
+        <div class="container">
+            <div class="register-container">
+                <div class="register-form">
+                    <div class="form-header">
+                        <h2>تسجيل <span class="gold-text">حساب جديد</span></h2>
+                        <p>انشئ حسابك الآن للاستفادة من خدمات NetGold الذهبية</p>
+                    </div>
+                    
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label for="fullName">الاسم الكامل</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="fullName" name="fullName" required placeholder="أدخل اسمك الكامل">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" required placeholder="example@email.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" id="phone" name="phone" required placeholder="05XXXXXXXX">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">العنوان</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input type="text" id="address" name="address" required placeholder="شارع، مدينة، رمز بريدي">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="package">اختر الباقة</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-box"></i>
+                                <select id="package" name="package" required>
+                                    <option value="" disabled selected>اختر الباقة المناسبة</option>
+                                    <option value="silver">الباقة الفضية - $29/شهر</option>
+                                    <option value="gold">الباقة الذهبية - $49/شهر</option>
+                                    <option value="diamond">الباقة الماسية - $79/شهر</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">كلمة المرور</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="password" name="password" required placeholder="أدخل كلمة المرور">
+                                <i class="fas fa-eye toggle-password"></i>
+                            </div>
+                            <div class="password-strength">
+                                <div class="strength-bar"></div>
+                                <span class="strength-text">قوة كلمة المرور: ضعيفة</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirmPassword">تأكيد كلمة المرور</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="أعد إدخال كلمة المرور">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">أوافق على <a href="#" class="gold-text">الشروط والأحكام</a> و <a href="#" class="gold-text">سياسة الخصوصية</a></label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-block">إنشاء حساب</button>
+                        
+                        <div class="form-footer">
+                            <p>لديك حساب بالفعل؟ <a href="#" class="gold-text">تسجيل الدخول</a></p>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="register-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>حماية وأمان</h3>
+                        <p>بياناتك محمية بتقنيات التشفير المتقدمة ولا نشاركها مع أي طرف ثالث.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>تفعيل سريع</h3>
+                        <p>سيتم تفعيل خدمتك خلال 24 ساعة من إنشاء الحساب والدفع.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>دعم مجاني</h3>
+                        <p>فريق الدعم الفني جاهز لمساعدتك في أي وقت على مدار الساعة.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3>عروض حصرية</h3>
+                        <p>احصل على عروض وخصومات حصرية لعملاء NetGold عند التسجيل.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-crown"></i>
+                        <h2>Net<span class="gold-text">Gold</span></h2>
+                    </div>
+                    <p>شركة NetGold تقدم خدمات إنترنت عالية الجودة مع التركيز على رضا العملاء والابتكار التكنولوجي.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#services">خدماتنا</a></li>
+                        <li><a href="index.html#packages">الباقات</a></li>
+                        <li><a href="index.html#about">من نحن</a></li>
+                        <li><a href="register.html">تسجيل حساب</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>اتصل بنا</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt gold-text"></i> شارع النخيل، الرياض، السعودية</li>
+                        <li><i class="fas fa-phone gold-text"></i> +966 11 123 4567</li>
+                        <li><i class="fas fa-envelope gold-text"></i> info@netgold.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 NetGold. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
